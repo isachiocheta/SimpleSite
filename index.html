@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body data-theme="light">
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Modo Escuro</button>
+  
+    <header>
+      <h1>Blog do Livro: Normal People</h1>
+      <p>Por Sally Rooney</p>
+    </header>
+    <div class="container">
+        <div class="cover">
+          <img src="./img/normalp.jpg" alt="Capa do livro 'Normal People', de Sally Rooney">
+          <img src="./img/normalp3.jpg" alt="Marianne e Connell deitados lado a lado, olhando um para o outro">
+          <img src="./img/normalp4.jpg" alt="Cena emocional entre Marianne e Connell na sala de aula">
+          <img src="./img/normalp7.jpg" alt="Marianne sentada sozinha, com expressão pensativa">
+          <img src="./img/normalp6.jpg" alt="Connell caminhando pela cidade em clima melancólico">
+        </div>             
+  
+      <div>
+        <section class="description">
+          <h2>Descrição</h2>
+        
+          <p><strong>Pessoas Normais</strong>, de Sally Rooney, é uma obra que mergulha profundamente na complexidade dos relacionamentos humanos, especialmente na juventude. A narrativa acompanha Marianne e Connell, dois jovens irlandeses que, apesar de compartilharem um forte laço afetivo desde o ensino médio, vivem um relacionamento marcado por silêncios, desencontros e uma intensa carga emocional. Rooney constrói seus personagens com uma honestidade brutal, explorando temas como identidade, classe social, saúde mental e vulnerabilidade afetiva, revelando como pequenas escolhas e inseguranças moldam o curso de suas vidas.</p>
+
+          <p>A escrita minimalista de Rooney é um dos pontos centrais da obra. Ela opta por diálogos enxutos e descrições sutis, que, apesar da simplicidade, carregam uma profundidade emocional impactante. A ausência de marcas tradicionais de diálogo, por exemplo, intensifica a sensação de proximidade e realismo. Além disso, a autora rejeita o sentimentalismo fácil, preferindo expor as contradições internas dos protagonistas, o que convida o leitor a refletir sobre a complexidade das conexões humanas e o quanto somos, muitas vezes, incompreensíveis até para nós mesmos.</p>
+          
+          <p>Tanto o livro quanto a série adaptada pela BBC e Hulu conseguem captar a sensibilidade da história. A série, em especial, se destaca por sua direção delicada, atuações intensas (com destaque para Paul Mescal e Daisy Edgar-Jones), trilha sonora intimista e um cuidado visual que traduz com fidelidade a atmosfera do romance. Recomendo fortemente a leitura do livro e o acompanhamento da série, especialmente para quem busca histórias que tratem de forma realista os dilemas da juventude, o amor contemporâneo e os conflitos emocionais mais profundos.</p>
+        </section>
+
+        <section class="quotes">
+            <h2>Frases marcantes</h2>
+          
+            <div class="quote-item">
+                <blockquote>“Marianne, ele disse, não sou religioso, mas às vezes acho que deus fez você para mim.”</blockquote>
+              </div>
+
+            <div class="quote-item">
+              <blockquote>“Eu contesto cada pensamento ou ação ou sentimento meu que está sendo controlado como se vivêssemos em uma fantasia autoritária.”</blockquote>
+            </div>
+          
+            <div class="quote-item">
+              <blockquote>“São engraçadas as decisões que a gente toma porque gosta de alguém, ele diz, e aí sua vida inteira muda.”</blockquote>
+            </div>
+          
+            <div class="quote-item">
+              <blockquote>“Você só precisa esclarecer para si mesmo o que acha que é justo e bom no mundo.”</blockquote>
+            </div>
+
+            <div class="quote-item">
+                <blockquote>“Marianne tinha a sensação de que sua vida real acontecia em outro lugar, bem distante dali, acontecia sem ela, e não sabia se um dia descobriria onde era e se seria parte dela.”</blockquote>
+              </div>
+
+          </section>          
+  
+        <section class="opinions">
+          <h2>Opiniões dos leitores</h2>
+          <ul>
+            <li> "Uma leitura intensa e realista sobre o que significa se conectar com alguém." – Clara M.</li>
+            <li> "Senti cada capítulo como se estivesse vivendo com os personagens." – João F.</li>
+            <li> "Triste, bonito e verdadeiro. Um dos melhores livros que já li." – Rafaela D.</li>
+            <li> "A escrita delicada capta com precisão as emoções e inseguranças dos protagonistas." – Isabela C.</li>
+            <li> "A prosa é direta, sem aspas nos diálogos, o que pode estranhar no início, mas se torna envolvente." – Aline G.</li>
+            <li> "Explora temas como classe social, saúde mental e comunicação na era moderna com muita profundidade." – Benjamin H.</li>
+            <li> "Marianne e Connell são complexos e imperfeitos, o que os torna extremamente humanos." – Ana B.</li>
+        </ul>
+        </section>
+      </div>
+    </div>
+  
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const isDark = body.getAttribute('data-theme') === 'dark';
+        body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        document.querySelector('.theme-toggle').textContent = isDark ? '🌙 Modo Escuro' : '☀️ Modo Claro';
+      }
+    </script>
+  
+  </body>
+  </html>
